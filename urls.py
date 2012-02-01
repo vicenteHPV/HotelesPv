@@ -9,7 +9,7 @@ admin.autodiscover()
 
 urlpatterns = patterns('',
     # Examples:
-     url(r'^$', 'HotelesPv.motor.views.home',{'saludo':'Y Sigo Aprendiendo Python y más haber', 'opcion':'Segunda Opcion'} ),
+     url(r'^$', 'HotelesPv.motor.views.home',{'saludo':'Y Sigo Aprendiendo Python y más', 'opcion':'Segunda Opcion'} ),
     # url(r'^HotelesPv/', include('HotelesPv.foo.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:
