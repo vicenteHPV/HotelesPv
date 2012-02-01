@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ saludo }}</title>
+    <link rel="stylesheet" type="text/css" href="/recursos/frontend/css/login.css" />
+</head>
+<body>
+<p>{{ saludo }}</p>
+<div class="login">
+<form action="" method="post" id="form-login" class="form-login">
+    {% csrf_token %}
+    <p>
+    <label for="username" class="required">Usuario:</label>
+    <input id="username" type="text" name="username" maxlength="30" class="text"/>
+    </p>
+    <p>
+    <label for="password" class="required">Contraseña:</label>
+    <input type="password" name="password" id="password"  class="text"/>
+    </p>
+    <p>
+    <input type="submit" value="{{ opcion }}" class="boton"/>
+    </p>
+</form>
+</div>
+</body>
+</html>
